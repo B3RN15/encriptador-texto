@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <!-- Botón para cambiar entre modo día y noche -->
+        <button id="toggleTheme" onclick="toggleTheme()">Modo Noche</button>
+        <textarea id="inputText" placeholder="Introduce el texto aquí"></textarea>
+        <div class="buttons">
+            <button onclick="encryptText()">Encriptar</button>
+            <button onclick="decryptText()">Desencriptar</button>
+        </div>
+        <textarea id="outputText" placeholder="El resultado aparecerá aquí" readonly></textarea>
+        <!-- Nuevo botón de copiar al campo de visualización -->
+        <button class="copy-button" onclick="copyText()">Copiar Resultado</button>
+    </div>
+    <!-- Pie de página con tu nombre y el año 2024 -->
+    <footer>
+        <p>&copy; 2024 Bernabe Alvarez Guzman</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
